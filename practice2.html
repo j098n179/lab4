@@ -9,7 +9,7 @@ function colorchange()
     let b = document.getElementById("b").value;
     let modtext = document.getElementById("modifyabletext");
 
-    modtext.style.color = `rgb(${r}, ${g}, ${b})`;
+    modtext.style.borderColor = `rgb(${r}, ${g}, ${b})`;
 
 
 
@@ -25,11 +25,11 @@ function borderchange()
 
 
 
-<p id = "modifyabletext" >Enter some RGB integer values in the text prompts! or use the fourth box to change the width</p>
+<p id = "modifyabletext" >Enter some RGB integer values in the text prompts! or use the fourth box to change the width. Make sure all 3 boxes are filled to change the color</p>
 <p>Red</p> <input type="number" id="r">
 <p>green</p><input type="number" id="g">
 <p>Blue</p><input type="number" id="b">
-<button onclick="colorchange()">Change Color!</button>
+<button onclick="colorchange()">Change Border Color!</button>
 
 <p><br /></p>
 <input type="number" id="borderwidth">
