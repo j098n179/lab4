@@ -1,0 +1,38 @@
+<html>
+<link rel="stylesheet" type="text/css" href ="practice2.css" />
+<script>
+
+function colorchange()
+{
+    let r = document.getElementById("r").value;
+    let g = document.getElementById("g").value;
+    let b = document.getElementById("b").value;
+    let modtext = document.getElementById("modifyabletext");
+
+    modtext.style.color = `rgb(${r}, ${g}, ${b})`;
+
+
+
+}
+function borderchange()
+{
+    let borderwidth = document.getElementById("borderwidth").value;
+    let modtext = document.getElementById("modifyabletext");
+    modtext.style.borderWidth = `${borderwidth}px`;
+
+}
+</script>
+
+
+
+<p id = "modifyabletext" >Enter some RGB integer values in the text prompts! or use the fourth box to change the width</p>
+<p>Red</p> <input type="number" id="r">
+<p>green</p><input type="number" id="g">
+<p>Blue</p><input type="number" id="b">
+<button onclick="colorchange()">Change Color!</button>
+
+<p><br /></p>
+<input type="number" id="borderwidth">
+<button onclick="borderchange()">Change border width!</button>
+
+</html>
